@@ -5,7 +5,7 @@
   i18n: jalpc
   gh_user: huyenbnguyen
   repo: distributed-systems-wpi
-  img: /static/assets/img/landing/avatar.jpg
+  img: /static/assets/img/landing/distributed-systems.png
   tasks:
     - desc: Implemented a file backup program that can move files/directory to a dumpster directory, or move files from the dumpster to the current directory, or remove all files in the dumpster permanently.
       tool: C.
@@ -19,7 +19,7 @@
   i18n: cpython
   gh_user: huyenbnguyen
   repo: Xiangqi-hbnguyen
-  img: /static/assets/img/landing/avatar.jpg
+  img: /static/assets/img/landing/xiangqi.png
   tasks:
     - desc: Developed, and tested the game engine using Test-Driven Development. 
     - desc: Utilized design patterns to reduce my code base from 15,000+ down to 5,000+ lines of code.
@@ -27,7 +27,7 @@
 
 - name: Information Retrieval Projects
   i18n: google
-  img: /static/assets/img/landing/avatar.jpg
+  img: /static/assets/img/landing/info-retrieval.png
   tasks:
     - desc: Developed program to crawl a text corpus with inverted index that can handle wildcard searches, and boolean searches
     - desc: Implemented a search engine that uses Page Rank Algorithm. 
