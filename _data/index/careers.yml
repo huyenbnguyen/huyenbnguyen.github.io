@@ -1,30 +1,62 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: Company A
+    detail: Hitachi Vantara
     i18n: company_a
   desc:
-    detail: I worked at Company A ...
+    detail: "Worked on Hitachi Content Platform for Cloud Scale (HCPCS) - an object storage platform that is Amazon S3 compatible:"
     i18n: company_a_desc
+  tasks:
+    - Taught myself distributed systems concepts and quickly ramped up on new tools/frameworks within 2 months.   
+    - Primary maintainer of the Management API, which is the API responsible for user authorization/authentication and serves as an abstraction layer over all internal APIs.
+    - Designed and implemented scheduled policies for database management.
+    - Collaborated with senior engineers to design and implement Amazon S3 APIs.
+    - Participated in the design of all features, and  fixed critical bugs, including those in areas that I did not develop. 
   date:
-    detail: Apr. 2016
+    detail: June 2018 - Present
     i18n: company_a_date
   job:
-    detail: CTO
+    detail: Software Engineer
     i18n: company_a_job
+  tool: 
+    detail: Java, RxJava, Dagger, gRPC, Protocol Buffers, Swagger, Docker, Raft Consensus Algorithm.
   icon: fa-plus-square
   present: true
 
 - name:
-    detail: Company B
+    detail: Microsoft New England Research and Development Center (NERD)
     i18n: company_b
   desc:
-    detail: I worked at Company B ...
+    detail: "Developed Fact or Fiction - a web application that classifies subjective/objective sentence:"
     i18n: company_b_desc
+  tasks:
+    - Designed and implemented the application using Model-View-Controller pattern.
+    - Designed and implemented the database to manage entities (i.e. User, Query, Sentence) using object-relational mapping (Entity Framework).
+    - Built APIs to handle text submission, user registration, and voting on a sentence. 
   date:
-    detail: Jun. 2015
+    detail: October - December 2017
     i18n: company_b_date
   job:
-    detail: Full Stack Developer
+    detail: Software Engineering Intern
     i18n: company_b_job
+  tool:  
+    detail: C#, Python, ASP.NET Core MVC Framework, Entity Framework, Azure.
   icon: fa-plus-square
+
+- name:
+    detail: Putnam Investments
+    i18n: company_c
+  tasks:
+    - Taught myself to understand how Lucidworks Fusion indexes and store data in one week. Researched on internal database design. Collaborated with architects to integrate Lucidworks Fusion into Digital Investments Platform (DIP) to develop unified search across multiple databases.    
+    - Built data visualizations in DIP with real-time data ingestion to increase portfolio management productivity.
+    - DIP is adopted by 1,700+ employees to manage $175 billion in assets under management. 
+  date:
+    detail: May - August 2016
+    i18n: company_c_date
+  job:
+    detail: Software Engineering Intern
+    i18n: company_c_job
+  tool:  
+    detail: Lucidworks Fusion, REST, SQL, HTML, CSS, Bootstrap, D3.js, Ext.js.
+  icon: fa-plus-square
+  present: true

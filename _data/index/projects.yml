@@ -1,22 +1,37 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Jalpc
+- name: Distributed Systems Projects
   i18n: jalpc
-  gh_user: jarrekk
-  repo: Jalpc
-  img: /static/assets/img/landing/jekyll.png
-  desc: This project is my project. I use javescript to get repo's information all my repos have only one request.
+  gh_user: huyenbnguyen
+  repo: distributed-systems-wpi
+  img: /static/assets/img/landing/avatar.jpg
+  tasks:
+    - desc: Implemented a file backup program that can move files/directory to a dumpster directory, or move files from the dumpster to the current directory, or remove all files in the dumpster permanently.
+      tool: C.
+    - desc: Built a client and server to remote execute shell commands. 
+      tool: C.
+    - desc: Wrote a program to effectively query two large datasets with 50,000 customers and 5,000,000 records 
+      tool: Java, Apache Hadoop, Map Reduce.
 
-- name: Python
+
+- name: Xiangqi (Chinese Chess) Engine
   i18n: cpython
-  gh_user: python
-  repo: cpython
-  img: /static/assets/img/landing/python.png
-  desc: This project is other's project. I use another request to get repo's information.
+  gh_user: huyenbnguyen
+  repo: Xiangqi-hbnguyen
+  img: /static/assets/img/landing/avatar.jpg
+  tasks:
+    - desc: Developed, and tested the game engine using Test-Driven Development. 
+    - desc: Utilized design patterns to reduce my code base from 15,000+ down to 5,000+ lines of code.
+      tool: Java
 
-- name: Google
+- name: Information Retrieval Projects
   i18n: google
-  url: https://google.com
-  img: /static/assets/img/landing/google.png
-  desc: This is another project.
+  img: /static/assets/img/landing/avatar.jpg
+  tasks:
+    - desc: Developed program to crawl a text corpus with inverted index that can handle wildcard searches, and boolean searches
+    - desc: Implemented a search engine that uses Page Rank Algorithm. 
+    - desc: Built a text clustering program using k-means clustering.
+    - desc: Developed the backend for a web application that searches for good restaurants at a given location based on combined user review scores from Yelp and Google Maps 
+      tool: Python
+
