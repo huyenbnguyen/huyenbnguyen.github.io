@@ -52,9 +52,9 @@
   --popover: oklch(0.215 0.012 250);
   --popover-foreground: oklch(0.94 0.01 250);
 
-  /* Mint/teal accent */
-  --primary: oklch(0.82 0.16 165);
-  --primary-foreground: oklch(0.2 0.02 250);
+  /* Pink accent */
+  --primary: oklch(0.72 0.2 350);
+  --primary-foreground: oklch(0.15 0.02 350);
 
   --secondary: oklch(0.27 0.015 250);
   --secondary-foreground: oklch(0.94 0.01 250);
@@ -62,18 +62,18 @@
   --muted: oklch(0.25 0.012 250);
   --muted-foreground: oklch(0.65 0.015 250);
 
-  --accent: oklch(0.7 0.14 220);
-  --accent-foreground: oklch(0.15 0.02 250);
+  --accent: oklch(0.65 0.18 330);
+  --accent-foreground: oklch(0.15 0.02 350);
 
   --destructive: oklch(0.65 0.22 25);
   --destructive-foreground: oklch(0.98 0.01 250);
 
   --border: oklch(0.3 0.015 250);
   --input: oklch(0.3 0.015 250);
-  --ring: oklch(0.82 0.16 165);
+  --ring: oklch(0.72 0.2 350);
 
   --terminal: oklch(0.14 0.014 250);
-  --terminal-foreground: oklch(0.82 0.16 165);
+  --terminal-foreground: oklch(0.72 0.2 350);
 }
 
 @layer base {
