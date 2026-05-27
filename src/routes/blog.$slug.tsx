@@ -50,7 +50,7 @@ function BlogPost() {
         {" · "}
         {post.readingMinutes} min read
         {" · "}
-        {post.tags.map((t) => `#${t}`).join(" ")}
+        {post.tags.map((t: string) => `#${t}`).join(" ")}
       </p>
 
       <div className="mt-8 space-y-4 leading-relaxed text-foreground/90">
