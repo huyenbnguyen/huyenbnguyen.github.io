@@ -7,7 +7,7 @@ export const profile = {
   email: "hello@example.com",
   github: "https://github.com/yourhandle",
   linkedin: "https://linkedin.com/in/yourhandle",
-  resumeUrl: "/resume.pdf",
+  // resumeUrl: "/resume.pdf",
   bio: [
     "Backend engineer with 7+ years of experience designing high-throughput services, event-driven architectures, and data pipelines.",
     "I care about correctness, observability, and code that the next engineer can reason about. Most of my work lives behind the curtain — quietly handling millions of requests.",

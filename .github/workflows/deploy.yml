@@ -31,15 +31,13 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      # Build a fully static site. nitro's `static` preset prerenders all routes
-      # and emits the result into `.output/public`, which GitHub Pages can serve.
+      # Build a fully static site. TanStack Start's prerenderer crawls all routes
+      # and emits static HTML into `dist/client`, which GitHub Pages can serve.
       - name: Build static site
-        env:
-          NITRO_PRESET: static
         run: bun run build
 
       - name: Add .nojekyll
-        run: mkdir -p .output/public && touch .output/public/.nojekyll
+        run: touch dist/client/.nojekyll
 
       - uses: actions/configure-pages@v5
 
@@ -48,7 +46,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
-          path: .output/public
+          path: dist/client
 
   deploy:
     needs: build
@@ -62,4 +60,4 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           artifact: github-pages
-          path: .output/public/ # The artifact unzips into this folder
+          path: dist/client/ # The artifact unzips into this folder
