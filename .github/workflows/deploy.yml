@@ -36,14 +36,16 @@ jobs:
       - name: Build static site
         env:
           NITRO_PRESET: static
-        run: bun run build
+        run: bun run build --outdir .output/public
 
       - name: Add .nojekyll
         run: mkdir -p .output/public && touch .output/public/.nojekyll
 
       - uses: actions/configure-pages@v5
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
         with:
           name: build-artifact
           path: .output/public
@@ -55,7 +57,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
         with:
           artifact: build-artifact
