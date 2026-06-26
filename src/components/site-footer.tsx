@@ -1,5 +1,20 @@
 import { profile } from "@/data/profile";
 
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      [elemName: string]: any;
+    }
+  }
+}
+
+declare module "react/jsx-runtime" {
+  export function jsx(type: any, props: any, key?: any): any;
+  export function jsxs(type: any, props: any, key?: any): any;
+  export function jsxDEV(type: any, props: any, key?: any): any;
+  export const Fragment: any;
+}
+
 export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-border">
