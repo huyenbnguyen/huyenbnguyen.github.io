@@ -45,6 +45,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
+          name: build-artifact
           path: .output/public
 
   deploy:
@@ -56,3 +57,6 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact: build-artifact
+          path: output-dir/ # The artifact unzips into this folder
